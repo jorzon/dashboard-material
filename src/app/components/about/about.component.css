@@ -1,0 +1,15 @@
+.m-0 {
+  margin: 0;
+}
+* {
+  color: #9b9b9b !important;
+}
+
+::ng-deep .mat-form-field-flex {
+  border-radius: 8px 8px 0 0 !important;
+  overflow: hidden;
+}
+
+::ng-deep .mat-expansion-panel-body {
+  padding: 0 32px 16px;
+}

@@ -1,0 +1,83 @@
+<mat-accordion>
+  <mat-expansion-panel class="m-0">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+  </mat-expansion-panel>
+  <mat-expansion-panel class="m-0">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Contacto
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+  </mat-expansion-panel>
+  <mat-expansion-panel class="m-0">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Datos de privacidad
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+  </mat-expansion-panel>
+  <mat-expansion-panel
+    class="m-0"
+    [expanded]="step === 0"
+    (opened)="setStep(0)"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Adicional
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Selec. colegio de procedencia</mat-label>
+        <mat-select>
+          <mat-option value="option1">College</mat-option>
+          <mat-option value="option2">College</mat-option>
+          <mat-option value="option3">College</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Selec. región</mat-label>
+        <mat-select>
+          <mat-option value="option1">Lima</mat-option>
+          <mat-option value="option2">Piura</mat-option>
+          <mat-option value="option3">Arequipa</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <br />
+    <div>
+      <p>¿Quienes peuden recoger al estudiante?</p>
+
+      <button
+        mat-mini-fab
+        disabled
+        aria-label="Example icon button with a home icon"
+      >
+        <mat-icon>home</mat-icon>
+      </button>
+      Agregar responsables (3 máx.)
+    </div>
+    <br />
+    <div>
+      <p>¿Como se regresa a casa el estudiante?</p>
+      <mat-form-field appearance="fill">
+        <mat-label>Selec. medio de movilidad</mat-label>
+        <mat-select>
+          <mat-option value="option1">Lima</mat-option>
+          <mat-option value="option2">Piura</mat-option>
+          <mat-option value="option3">Arequipa</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

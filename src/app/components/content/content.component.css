@@ -1,0 +1,34 @@
+#content-component {
+  position: relative;
+}
+
+.matriculate_right {
+  display: flex;
+  position: relative;
+  top: -50px;
+  overflow: hidden;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  background: #ffffff;
+  min-height: 600px;
+  flex: 1 auto;
+  justify-content: space-between;
+}
+
+.matriculate_left {
+  width: 350px;
+}
+
+.info {
+  flex: 1 auto;
+  background: #fff;
+  border-left: 1px solid #d4d4d4;
+}
+
+.matriculate__main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-right: 130px;
+  justify-content: space-between;
+}

@@ -1,0 +1,53 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+#search {
+  padding: 16px 24px 16px 16px;
+}
+
+* {
+  color: #9b9b9b;
+}
+
+.expansion-content {
+  border-radius: 12px !important;
+  background: none;
+  box-shadow: none;
+  border: 1px solid #9b9b9b;
+  margin-bottom: 12px;
+}
+
+::ng-deep .expansion-content.mat-expanded {
+  background: #ffffff;
+  border: none;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.expansion-list {
+  padding: 10px 12px;
+}
+
+.expansion-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.expansion-list ul li {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+
+.expansion-list ul li:last-child {
+  text-align: right;
+  color: green;
+  font-weight: bold;
+}

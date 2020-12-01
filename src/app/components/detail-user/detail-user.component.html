@@ -1,0 +1,92 @@
+<div class="user">
+  <mat-card class="user-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Elio </mat-card-title>
+      <mat-card-subtitle style="margin-bottom: 0"
+        >Gonzales Perez</mat-card-subtitle
+      >
+    </mat-card-header>
+
+    <div class="user-menu">
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" xPosition="before" class="custom-menu-user">
+        <div class="custom-menu-item">
+          <button mat-menu-item>
+            <mat-icon>waves</mat-icon>
+            <span>Unir familia</span>
+          </button>
+        </div>
+        <div class="custom-menu-item">
+          <button mat-menu-item>
+            <mat-icon>access_alarm</mat-icon>
+            <span>Activar estudiante</span>
+          </button>
+        </div>
+        <div class="custom-menu-item">
+          <button mat-menu-item>
+            <mat-icon>brightness_auto</mat-icon>
+            <span>Desactivar estudiante</span>
+          </button>
+        </div>
+        <div class="custom-menu-item">
+          <button mat-menu-item>
+            <mat-icon>gps_fixed</mat-icon>
+            <span>Declaración del padre</span>
+          </button>
+        </div>
+        <div class="custom-menu-item">
+          <button mat-menu-item>
+            <mat-icon>graphic_eq</mat-icon>
+            <span>Ficha de datos</span>
+          </button>
+        </div>
+      </mat-menu>
+    </div>
+
+    <div class="user-detail">
+      <h2 class="mat-subheading-1">Detalle del estudiante</h2>
+      <ul>
+        <li>
+          Nro. documento
+        </li>
+        <li>24234234</li>
+        <li>
+          Grado
+        </li>
+        <li>1 Primaria</li>
+        <li>
+          Estado de pago
+        </li>
+        <li>
+          <button mat-raised-button color="primary">Al día</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="user-matriculate">
+      <h2 class="mat-subheading-1">Matricular</h2>
+      <button
+        mat-mini-fab
+        disabled
+        aria-label="Example icon button with a home icon"
+      >
+        <mat-icon>home</mat-icon>
+      </button>
+      Matriculate en linea
+    </div>
+
+    <div class="user-years">
+      <h2 class="mat-subheading-1">Los Leñadores</h2>
+      <button mat-flat-button color="accent" (click)="openDialog()">
+        Historico de aulas
+      </button>
+    </div>
+  </mat-card>
+</div>

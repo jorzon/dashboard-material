@@ -1,0 +1,61 @@
+.example-header-image {
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 50px;
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.user-menu {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+::ng-deep .custom-menu-user {
+  height: 200px;
+}
+
+::ng-deep .custom-menu-item button span,
+::ng-deep .custom-menu-item button .mat-icon {
+  color: #bdbdbd;
+}
+
+.user-card {
+  width: 240px;
+  color: #9b9b9b;
+  box-shadow: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 0;
+  height: 100%;
+}
+
+.user-detail {
+  padding-top: 20px;
+}
+
+.user-years {
+  padding-top: 20px;
+}
+
+.user-detail ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.user-detail ul li {
+  display: inline-block;
+  width: 49%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.user-detail ul li:nth-child(even) {
+  text-align: right;
+}
+
+.user {
+  height: 100%;
+}

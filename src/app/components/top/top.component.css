@@ -1,0 +1,18 @@
+#content-top {
+  padding: 10px 0 50px;
+  background: #ffd600;
+}
+.bgcolor-0 {
+  background: none;
+}
+.example-icon {
+  padding: 0 14px;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.p-0 {
+  padding: 0;
+  min-width: 45px;
+}

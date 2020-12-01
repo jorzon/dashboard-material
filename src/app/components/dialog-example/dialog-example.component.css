@@ -1,0 +1,28 @@
+::ng-deep table {
+  width: 850px;
+  color: #9b9b9b !important;
+}
+
+table td,
+table th,
+.mat-dialog-title {
+  color: #9b9b9b !important;
+}
+
+.paginator-margin {
+  margin: 10px 0;
+}
+
+.example-header-image {
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 40px;
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.tabla-user {
+  color: #9b9b9b !important;
+  margin-bottom: 12px;
+}

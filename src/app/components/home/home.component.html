@@ -1,0 +1,33 @@
+<div id="home">
+  <mat-sidenav-container class=" drawer-container">
+    <mat-sidenav
+      [ngClass]="{ 'm-sidenav': true, 'm-sidenav-small': sidenavSmall }"
+      mode="side"
+      fixedInViewport="true"
+      opened
+      #sidenav
+    >
+      <div class="content-left">
+        <app-left></app-left>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content
+      [ngClass]="{ 'm-main': true, 'm-main-large': sidenavSmall }"
+    >
+      <div class="content-rigth">
+        <app-rigth></app-rigth>
+        <!-- <button type="button" mat-button (click)="drawer.toggle()"> -->
+
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="sidenavToggle()"
+          style="margin-left: 16px;"
+        >
+          Cerrar menu lateral
+        </button>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
